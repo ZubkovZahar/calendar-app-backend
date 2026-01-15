@@ -1,0 +1,27 @@
+{
+  "displayName": "unit",
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "moduleNameMapper": {
+    "^src/(.*)$": "<rootDir>/src/$1",
+    "^test/(.*)$": "<rootDir>/test/$1"
+  },
+  "rootDir": "..",
+  "testRegex": ".*\\.spec\\.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "coveragePathIgnorePatterns": [
+    "node_modules",
+    "test",
+    "dist",
+    ".module.ts",
+    "main.ts",
+    "common/configs",
+    ".dto.ts",
+    ".entity.ts"
+  ],
+  "coverageDirectory": "test/coverage",
+  "testEnvironment": "node",
+  "clearMocks": true,
+  "restoreMocks": true
+}
